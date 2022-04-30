@@ -7,10 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v2
-        with:
-          submodules: recursive
-          token: ${{ secrets.A_SECRET_TOKEN}}
+        uses: actions/checkout@v2.3.4
 
       - name: Yarn Cache
         uses: c-hive/gha-yarn-cache@v1
